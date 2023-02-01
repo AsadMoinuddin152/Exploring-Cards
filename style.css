@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
     overflow: hidden;
     margin: 0;
     background: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
@@ -17,13 +17,16 @@ body {
 
 .heading {
     font-size: 30px;
+    margin: 10px;
+    padding: 0;
+    z-index: 1;
     flex-direction: column;
-    margin-left: 10px;
 }
 
 .container {
     display: flex;
     width: 90vw;
+    
 }
 
 .panel {
@@ -67,4 +70,15 @@ body {
     .panel:nth-of-type(5) {
         display: none;
     }
+}
+.bg
+{
+    filter: blur(0px);
+    display: absolute;
+}
+.load-text
+{
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
 }
